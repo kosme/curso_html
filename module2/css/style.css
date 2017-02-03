@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+
+.cuerpo{
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+
+.cuerpo>section{
+  background-color: gray;
+  border: 1px solid black;
+}
+
+section>p{
+  padding: 10px;
+  margin: 10px;
+  clear: right;
+}
+
+h2{
+  padding: 10px;
+  float: right;
+  border: 1px solid black;
+}
+#last-section h2 {
+  background-color: red;
+}
+
+#beef{
+  background: #0000ff;
+}
+
+#chicken{
+  background: #00ffff;
+}
+
+@media (min-width: 992px){ /*desktop*/
+  .cuerpo{
+    width: 33%;
+  }
+}
+
+@media(min-width:768px) and (max-width:991px){ /*tablet*/
+  .cuerpo:not(#last-section){
+    width: 50%;
+  }
+}
